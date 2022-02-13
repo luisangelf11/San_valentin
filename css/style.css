@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+header{
+    width: 100%;
+    height: auto;
+}
+
+.heart{
+    display: block;
+    margin: 2rem auto;
+    padding: 5px;
+    border-radius: 50%;
+    animation: pulse 1s infinite linear;
+}
+
+.text-date{
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 32ch;
+    animation: typing 2s steps(32), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    color: rgb(221, 50, 50);
+    font-size: 16px;
+    margin:1rem auto;
+}
+
+.heart-box{
+    width:100%;
+}
+
+.rose-section{
+    width: 100%;
+    margin-top: 1rem;
+    height: auto;
+    background-color: rgb(245, 119, 119);
+}
+
+.rose-section p{
+    padding: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.you-and-me{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    width:200px;
+    border-radius: 20px 40px;
+    background-color: indianred;
+    color: #fff;
+    cursor: pointer;
+    margin:10px auto;
+}
+
+button:hover{
+    transition: all .5s ease;
+    opacity: .75;
+}
+
+.content{
+    visibility: visible;
+    width: 300px;
+    height: auto;
+    transition: all .5s ease-in-out;
+    margin: .5rem auto;
+}
+
+.none{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.content img{
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+.content p{
+    text-align: center;
+}
+
+/*Animation*/
+@keyframes pulse{
+    from{
+        box-shadow: 0 0 0 0 rgb(250, 51, 51);
+    }to{
+        box-shadow: 0 0 0 30px rgba(252, 30, 30, 0.116);
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
