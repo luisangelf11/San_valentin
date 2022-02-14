@@ -99,6 +99,48 @@ button:hover{
     text-align: center;
 }
 
+.image-poem{
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+.playList{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.playList h3{
+    text-align: center;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.playList a{
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(230, 71, 71);
+    display: block;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(245, 119, 119);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    display: block;
+    margin-top: 20px;
+}
+
 /*Animation*/
 @keyframes pulse{
     from{
